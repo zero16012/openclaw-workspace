@@ -1,0 +1,17 @@
+# 依赖
+node_modules/
+
+# OpenClaw 内部文件（每台机器独立）
+.openclaw/
+
+# 构建输出
+wechat-game/build/
+
+# 系统文件
+*.log
+.DS_Store
+Thumbs.db
+
+# 开发环境
+.vscode/
+.idea/

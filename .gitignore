@@ -15,3 +15,22 @@ Thumbs.db
 # 开发环境
 .vscode/
 .idea/
+
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+
+# npm lock (每台机器重新生成)
+package-lock.json
+
+# 临时文件
+temp_*
+tmp/
+temp/
+
+# MSYS2 环境（完整工具链，太大不进 git）
+msys64/
+
+# 大体积二进制文件
+*.exe

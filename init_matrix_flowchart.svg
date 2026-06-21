@@ -1,0 +1,86 @@
+<svg viewBox="0 0 640 750" xmlns="http://www.w3.org/2000/svg" style="background:#ffffff;font-family:ui-sans-serif,system-ui,-apple-system,sans-serif;">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#000000" />
+    </marker>
+  </defs>
+  <style>
+    .ed { stroke:#000000; stroke-width:1.5; fill:none; }
+    .t { fill:#ffffff; stroke:#000000; stroke-width:1.5; }
+    .p { fill:#ffffff; stroke:#000000; stroke-width:1.5; }
+    .d { fill:#ffffff; stroke:#000000; stroke-width:1.5; }
+    .lb { fill:#000000; font-size:13px; font-weight:600; }
+    .tx { fill:#000000; }
+  </style>
+
+  <!-- MAIN FLOW -->
+  <path class="ed" marker-end="url(#arrow)" d="M 320 39 L 320 63" />
+  <path class="ed" marker-end="url(#arrow)" d="M 320 101 L 320 123" />
+  <path class="ed" marker-end="url(#arrow)" d="M 320 161 L 320 183" />
+  <path class="ed" marker-end="url(#arrow)" d="M 320 219 L 320 263" />
+
+  <!-- row==col（是）→ 赋值0 -->
+  <path class="ed" marker-end="url(#arrow)" d="M 260 285 L 140 285 L 140 340" />
+  <text class="lb" x="200" y="278">是</text>
+
+  <!-- row==col（否）→ 赋值INF -->
+  <path class="ed" marker-end="url(#arrow)" d="M 380 285 L 500 285 L 500 340" />
+  <text class="lb" x="440" y="278">否</text>
+
+  <!-- 赋值0 → 汇聚到col判断 -->
+  <path class="ed" d="M 140 378 L 140 460 L 320 460" />
+
+  <!-- 赋值INF → 汇聚到col判断 -->
+  <path class="ed" d="M 500 378 L 500 460 L 320 460" />
+
+  <!-- 汇聚箭头 → col判断 -->
+  <path class="ed" marker-end="url(#arrow)" d="M 320 460 L 320 476" />
+
+  <!-- col遍历完 → row判断 -->
+  <path class="ed" marker-end="url(#arrow)" d="M 320 524 L 320 576" />
+
+  <!-- col未遍历完 → 返回内层循环 -->
+  <path class="ed" marker-end="url(#arrow)" d="M 260 500 L 65 500 L 65 201 L 260 201" />
+  <text class="lb" x="163" y="493">未遍历完</text>
+
+  <!-- row未遍历完 → 返回外层循环 -->
+  <path class="ed" marker-end="url(#arrow)" d="M 260 600 L 65 600 L 65 141 L 260 141" />
+  <text class="lb" x="163" y="593">未遍历完</text>
+
+  <!-- row遍历完 → 结束 -->
+  <path class="ed" marker-end="url(#arrow)" d="M 320 624 L 320 683" />
+  <text class="lb" x="330" y="617">遍历完</text>
+
+  <!-- NODES -->
+  <rect class="t" x="280" y="5" width="80" height="34" rx="17" />
+  <text x="320" y="26" text-anchor="middle" font-size="14" font-weight="600" class="tx">开始</text>
+
+  <rect class="p" x="195" y="65" width="250" height="36" rx="4" />
+  <text x="320" y="87" text-anchor="middle" font-size="12" class="tx">初始化nodeNum=0，edgeNum=0</text>
+
+  <rect class="p" x="215" y="125" width="210" height="36" rx="4" />
+  <text x="320" y="147" text-anchor="middle" font-size="12" class="tx">循环遍历行（行号row）</text>
+
+  <rect class="p" x="215" y="183" width="210" height="36" rx="4" />
+  <text x="320" y="205" text-anchor="middle" font-size="12" class="tx">循环遍历列（列号col）</text>
+
+  <polygon class="d" points="320,263 380,285 320,307 260,285" />
+  <text x="320" y="281" text-anchor="middle" font-size="12" class="tx">判断row == col？</text>
+
+  <rect class="p" x="60" y="342" width="160" height="36" rx="4" />
+  <text x="140" y="364" text-anchor="middle" font-size="11" class="tx">graph[row][col] = 0</text>
+
+  <rect class="p" x="420" y="342" width="160" height="36" rx="4" />
+  <text x="500" y="364" text-anchor="middle" font-size="11" class="tx">graph[row][col] = INF</text>
+
+  <polygon class="d" points="320,476 380,500 320,524 260,500" />
+  <text x="320" y="496" text-anchor="middle" font-size="12" class="tx">判断col</text>
+  <text x="320" y="511" text-anchor="middle" font-size="12" class="tx">是否遍历完毕？</text>
+
+  <polygon class="d" points="320,576 380,600 320,624 260,600" />
+  <text x="320" y="596" text-anchor="middle" font-size="12" class="tx">判断row</text>
+  <text x="320" y="611" text-anchor="middle" font-size="12" class="tx">是否遍历完毕？</text>
+
+  <rect class="t" x="280" y="685" width="80" height="34" rx="17" />
+  <text x="320" y="706" text-anchor="middle" font-size="14" font-weight="600" class="tx">结束</text>
+</svg>

@@ -20,16 +20,19 @@
 
 ## 📝 值得记住的事
 
-### 双设备配置（2026-06-19）
-- ⭐ **台式机为主力**，笔记本为辅
-- 笔记本已记录在 `memory/hardware.md`
-- 台式机配置待填写，有信息时告诉我
+### 双设备配置（2026-06-21）
+- ⭐ **台式机为主力**（肥猫），笔记本为辅（星光）
+- 台式机：Ryzen 5 5600 + GTX 1060 3GB + 16GB DDR4，性能更强
+- 笔记本：i5-13500H + Iris Xe 核显，轻度便携用
+- 台式机和笔记本配置均已填写在 `memory/hardware.md`
+- 当前所在设备由主机名区分：肥猫=台式机，星光=笔记本
 - 后续询问运行环境时，优先查 `memory/hardware.md` 确认当前所在设备
 
-### Kimi 模型接入（2026-06-19）
+### Kimi 模型接入（2026-06-19，Key 更新于 2026-06-22）
 - 通过 Moonshot API 接入 Kimi 模型（kimi-k2.6 / kimi-k2.5 / moonshot-v1-128k 等）
 - 默认模型保持 DeepSeek V4 Flash，仅在需要识别图片时切到 Kimi
 - Kimi 使用国内端点 api.moonshot.cn/v1
+- API Key 于 2026-06-22 更新（旧 key 失效，已更换新 key）
 
 ### 流程图设计偏好（2026-06-14）
 - BOOS 要求流程图所有拐点必须为 **直线（直角拐线）**，不要曲线/圆角
@@ -47,4 +50,19 @@
 
 ---
 
-*上次更新：2026-06-19*
+### OpenClaw Control 快捷方式（2026-06-22）
+- 桌面 `OpenClaw Control` 改用 VBS 方案：`wscript.exe → OpenClawControl.vbs`
+- 双击自动检测 → 启动网关（如需）→ 打开 Edge PWA 面板
+- 全程静默无窗口，不再弹文本文档
+- 如果 .ps1 文件关联挂了，捷径是 vbs 脚本，不受影响
+
+---
+
+### 自动备份到 GitHub（2026-06-22）
+- 设置 cron 任务，每 30 分钟自动 `git add/commit/push` 到 GitHub
+- 静默执行，仅出错时汇报
+- 仓库：https://github.com/zero16012/openclaw-workspace
+
+---
+
+*上次更新：2026-06-22*

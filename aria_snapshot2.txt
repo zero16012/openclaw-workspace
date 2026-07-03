@@ -1,0 +1,329 @@
+﻿- generic [ref=e1]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - link "李泽锐" [ref=e7] [cursor=pointer]:
+        - /url: /users/pzvgcbsa2
+        - img [ref=e8]
+        - generic [ref=e9]: 李泽锐
+      - generic [ref=e10]:
+        - img "gold" [ref=e11]
+        - text: "12546"
+      - heading "08 数据结构-图的邻接矩阵存储及遍历操作 实验总用时：01:02:46" [level=2] [ref=e416]:
+        - generic [ref=e14]: 08 数据结构-图的邻接矩阵存储及遍历操作
+        - generic [ref=e15]: 实验总用时：01:02:46
+      - generic [ref=e17] [cursor=pointer]:
+        - generic [ref=e18]: 
+        - text: 更多操作
+      - generic "退出实训" [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: 
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]:
+          - generic "查看全部任务" [ref=e24] [cursor=pointer]:
+            - img "nav" [ref=e25]
+          - heading "第1关：图的邻接矩阵存储及求邻接点操作" [level=3] [ref=e28]
+          - generic [ref=e29]: "500"
+          - generic "全屏" [ref=e30] [cursor=pointer]:
+            - generic [ref=e31]: 
+        - generic [ref=e33]:
+          - list [ref=e34]:
+            - listitem [ref=e35]: 学习内容
+            - listitem [ref=e36]: 参考答案
+            - listitem [ref=e37]: 记录
+            - listitem [ref=e38]: 评论
+          - generic [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "任务描述" [ref=e44] [cursor=pointer]:
+                  - /url: "#37任务描述"
+              - listitem [ref=e45]:
+                - link "相关知识" [ref=e46] [cursor=pointer]:
+                  - /url: "#37相关知识"
+                - list [ref=e47]:
+                  - listitem [ref=e48]:
+                    - link "顶点集合" [ref=e49] [cursor=pointer]:
+                      - /url: "#37顶点集合"
+                  - listitem [ref=e50]:
+                    - link "边集合" [ref=e51] [cursor=pointer]:
+                      - /url: "#37边集合"
+              - listitem [ref=e52]:
+                - link "编程要求" [ref=e53] [cursor=pointer]:
+                  - /url: "#37编程要求"
+              - listitem [ref=e54]:
+                - link "测试说明" [ref=e55] [cursor=pointer]:
+                  - /url: "#37测试说明"
+            - separator [ref=e56]
+            - heading "任务描述" [level=3] [ref=e57]
+            - paragraph [ref=e58]: 本关任务：要求从文件输入顶点和边数据，包括顶点信息、边、权值等，编写程序实现以下功能。 1）构造无向网G的邻接矩阵和顶点集，即图的存储结构为邻接矩阵。 2）输出无向网G的各顶点和邻接矩阵。 3）输出无向网G中顶点H的所有邻接顶点。
+            - heading "相关知识" [level=3] [ref=e59]
+            - paragraph [ref=e60]: 图是表达“多对多”的关系的一种数据结构，由非空的有限顶点集合和有限边集合组成。将图的类型定义为枚举类型，在枚举值表中罗列：
+            - paragraph [ref=e61]:
+              - code [ref=e62]: "enum GraphKind{DG,DN,UDG,UDN}; // 有向图,有向网,无向图,无向网"
+            - heading "顶点集合" [level=4] [ref=e63]
+            - paragraph [ref=e64]:
+              - text: 每个顶点数据类型为
+              - code [ref=e65]: VertexType
+              - text: ，一个图的顶点集合用数组表示，数组下标表示顶点位置。数组内容包含顶点的信息，图的顶点集合的数据类型定义如下：
+            - list [ref=e67]:
+              - listitem [ref=e68]:
+                - code [ref=e69]: "#define MAX_VERTEX_NUM 20 // 最大顶点个数"
+              - listitem [ref=e70]:
+                - code [ref=e71]: typedef char VertexType[16]; // 顶点类型
+              - listitem [ref=e72]:
+                - code [ref=e73]: VertexType vexs[MAX_VERTEX_NUM]; // 顶点向量
+            - paragraph [ref=e74]: 将顶点数据类型定义为长度为16的字符数组类型，可以将表示的城市名称存储在计算机中。
+            - heading "边集合" [level=4] [ref=e75]
+            - paragraph [ref=e76]: 邻接矩阵是表示顶点之间相邻关系的矩阵。设G＝(V，E)是具有n顶点的图，则G的邻接矩阵是具有如下性质的n阶方阵：
+            - paragraph [ref=e77]:
+              - img "图及邻接矩阵" [ref=e78]
+            - paragraph [ref=e79]:
+              - img "网及邻接矩阵" [ref=e80]
+            - paragraph [ref=e81]:
+              - text: 用邻接矩阵来表示一个具有
+              - code [ref=e82]: "n"
+              - text: 个顶点的图时，用邻接矩阵中的
+              - code [ref=e83]: n×n
+              - text: 个元素存储顶点间相邻关系，对于无权图，当邻接矩阵中的元素仅表示相应的边是否存在时，
+              - code [ref=e84]: VRType
+              - text: 可定义为值为
+              - code [ref=e85]: "0"
+              - text: 和
+              - code [ref=e86]: "1"
+              - text: 的枚举类型，
+              - code [ref=e87]: "0"
+              - text: 表示两个顶点之间没有边，即没有关系。对于带权图，则为权值，如果两个顶点之间没有边，则用一个很大很大的数代替
+              - code [ref=e88]: ∞
+              - text: 。将顶点关系类型
+              - code [ref=e89]: VRType
+              - text: 定义为整型：
+            - paragraph [ref=e90]:
+              - code [ref=e91]: typedef int VRType; // 顶点关系边的数据类型
+            - paragraph [ref=e92]: 顶点关系边的数据类型类型，对于无权图，用1或0表示相邻否；对于带权图，则为权值。
+            - paragraph [ref=e93]: 图的边集合的数据类型定义如下：
+            - list [ref=e95]:
+              - listitem [ref=e96]:
+                - code [ref=e97]: "#define INFINITY INT_MAX // 用整型最大值代替∞"
+              - listitem [ref=e98]:
+                - code [ref=e99]: typedef struct
+              - listitem [ref=e100]:
+                - code [ref=e101]: "{"
+              - listitem [ref=e102]:
+                - code [ref=e103]: VRType adj;
+              - listitem [ref=e104]:
+                - code [ref=e105]: "} ArcCell,AdjMatrix[MAX_VERTEX_NUM][MAX_VERTEX_NUM];"
+            - paragraph [ref=e106]:
+              - text: 说明：
+              - code [ref=e107]: AcrCell
+              - text: 和
+              - code [ref=e108]: AdjMatrix
+              - text: 都是类型的名称，若有定义：
+              - code [ref=e109]: AdjMatrix arcs;
+              - text: 则
+              - code [ref=e110]: arcs
+              - text: 是一个以元素类型为
+              - code [ref=e111]: AcrCell
+              - text: 的
+              - code [ref=e112]: 20*20
+              - text: 二维数组。上述声明与下面等同：
+              - code [ref=e113]: ArcCell arcs [MAX_VERTEX_NUM][MAX_VERTEX_NUM];
+            - paragraph [ref=e114]: 图的邻接矩阵存储表示，类型定义如下：
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - code [ref=e118]: struct MGraph
+              - listitem [ref=e119]:
+                - code [ref=e120]: "{"
+              - listitem [ref=e121]:
+                - code [ref=e122]: VertexType vexs[MAX_VERTEX_NUM]; // 顶点向量
+              - listitem [ref=e123]:
+                - code [ref=e124]: AdjMatrix arcs; // 邻接矩阵
+              - listitem [ref=e125]:
+                - code [ref=e126]: int vexnum, arcnum; // 图的当前顶点数和弧数
+              - listitem [ref=e127]:
+                - code [ref=e128]: GraphKind kind; // 图的种类标志
+              - listitem [ref=e129]:
+                - code [ref=e130]: "};"
+            - paragraph [ref=e131]: 图的邻接矩阵表示法是图的一种顺序存储结构，优点是可以快速判断两个顶点之间是否存在边，可以快速添加边或者删除边，可以快速计算顶点度数、求邻接点的操作等；而其缺点是如果顶点之间的边比较少，会比较浪费空间。
+            - paragraph [ref=e132]: 邻接矩阵具有如下性质： （1）图中各项点的序号确定后，图的邻接矩阵是唯一确定的； （2）无向图和无向网的邻接矩阵是一个对称矩阵； （3）无向图邻接矩阵中第i行(或第i列)的非0元素的个数即为第i个顶点的度； （4）有向图邻接矩阵中第i行非0元素的个数为第i个顶点的出度，第i列非0元素的个数为第i个顶点的入度，第i个顶点的度为第i行与第j非0元素个数之和； （5）无向图的边数等于邻接矩阵中非0元素个数之和的一半，有向图的弧数等于邻接矩阵中非0元素个数之和。
+            - heading "编程要求" [level=3] [ref=e133]
+            - paragraph [ref=e134]: 根据提示，在右侧编辑器补充代码，要求从文件中输入顶点和边数据，包括顶点信息、边、权值等，编写函数实现图的基本运算：
+            - list [ref=e136]:
+              - listitem [ref=e137]:
+                - code [ref=e138]: void CreateGraphF(MGraph &G);// 采用数组(邻接矩阵)表示法，由文件构造无向网G
+              - listitem [ref=e139]:
+                - code [ref=e140]: void Display(MGraph G); // 输出邻接矩阵存储表示的图G
+              - listitem [ref=e141]:
+                - code [ref=e142]: int LocateVex(MGraph G,VertexType u);//若G中存在顶点u，则返回该顶点在图中位置；否则返回-1
+              - listitem [ref=e143]:
+                - code [ref=e144]: VertexType& GetVex(MGraph G,int v); // v是G中某个顶点的序号，返回v的值
+              - listitem [ref=e145]:
+                - code [ref=e146]: int FirstAdjVex(MGraph G,VertexType v);//v是图G中某个顶点，返回v的第一个邻接顶点的序号。若顶点在G中没有邻接顶点，则返回-1
+              - listitem [ref=e147]:
+                - code [ref=e148]: int NextAdjVex(MGraph G,VertexType v,VertexType w);//v是G中某个顶点，w是v的邻接顶点，返回v的(相对于w的)下一个邻接顶点的序号，若w是v的最后一个邻接顶点，则返回-1
+              - listitem [ref=e149]:
+                - code [ref=e150]: void DestroyGraph(MGraph &G); // 销毁图G
+            - heading "测试说明" [level=3] [ref=e151]
+            - paragraph [ref=e152]: 平台会对你编写的代码进行测试：
+            - paragraph [ref=e153]:
+              - text: 测试输入：
+              - code [ref=e154]: "3"
+              - code [ref=e155]: lt.txt
+              - code [ref=e156]: 武汉
+            - blockquote [ref=e157]:
+              - paragraph [ref=e158]:
+                - text: 输入说明： 第一行输入
+                - code [ref=e159]: "3"
+                - text: ，表示输入图的类型为无向网。 第二行输入文件名，该文件里保存了图的数据信息，内容如下： 6 9 武汉 上海 长沙 南京 成都 广州 武汉 长沙 9 武汉 成都 2 长沙 上海 2 长沙 南京 2 上海 南京 5 上海 广州 4 上海 成都 3 南京 广州 8 成都 广州 6
+            - blockquote [ref=e160]:
+              - paragraph [ref=e161]: 第1行为图的顶点的个数n； 第2行为图的边的条数m； 第3行至第n+2行是n个顶点的数据； 第n+3行至第n+m+2行是m条边的数据； 最后输入一个顶点的数据
+            - paragraph [ref=e162]:
+              - text: 预期输出：
+              - code [ref=e163]: 无向网
+              - code [ref=e164]: "6个顶点9条边。顶点依次是: 武汉 上海 长沙 南京 成都 广州"
+              - code [ref=e165]: "图的邻接矩阵:"
+              - code [ref=e166]: ∞ ∞ 9 ∞ 2 ∞
+              - code [ref=e167]: ∞ ∞ 2 5 ∞ ∞
+              - code [ref=e168]: 9 2 ∞ 2 ∞ ∞
+              - code [ref=e169]: ∞ 5 2 ∞ ∞ ∞
+              - code [ref=e170]: 2 ∞ ∞ ∞ ∞ ∞
+              - code [ref=e171]: ∞ ∞ ∞ ∞ ∞ ∞
+              - code [ref=e172]: 长沙 成都
+            - blockquote [ref=e173]:
+              - paragraph [ref=e174]: 输出说明： 第一行输出图的类型。 第二行起输出图的顶点和边的数据信息。 最后一行输出输入顶点的所有邻接点。
+            - separator [ref=e175]
+            - paragraph [ref=e176]: 开始你的任务吧，祝你成功！
+      - img "resize-icon" [ref=e179] [cursor=pointer]
+      - generic [ref=e180]:
+        - generic [ref=e181]:
+          - generic [ref=e182]:
+            - generic [ref=e185] [cursor=pointer]:
+              - generic "代码编辑器" [ref=e186]: 
+              - generic [ref=e187]: 代码文件
+              - generic [ref=e189]: 
+            - generic [ref=e190]:
+              - generic "显示目录" [ref=e191] [cursor=pointer]:
+                - generic [ref=e192]: 
+              - generic "恢复初始代码" [ref=e193] [cursor=pointer]:
+                - generic [ref=e194]: 
+              - generic "重置代码仓库" [ref=e195] [cursor=pointer]:
+                - generic [ref=e196]: 
+              - generic "设置" [ref=e197] [cursor=pointer]:
+                - generic [ref=e198]: 
+              - generic "全屏" [ref=e199] [cursor=pointer]:
+                - generic [ref=e200]: 
+          - code [ref=e206]:
+            - generic [ref=e207]:
+              - generic [ref=e209]:
+                - generic [ref=e212]: "1"
+                - generic [ref=e214]: "2"
+                - generic [ref=e216]: "3"
+                - generic [ref=e218]: "4"
+                - generic [ref=e220]: "5"
+                - generic [ref=e222]: "6"
+                - generic [ref=e224]: "7"
+                - generic [ref=e226]: "8"
+                - generic [ref=e228]: "9"
+                - generic [ref=e230]: "10"
+                - generic [ref=e232]: "11"
+                - generic [ref=e235]: "12"
+                - generic [ref=e237]: "13"
+                - generic [ref=e238]:
+                  - generic [ref=e239] [cursor=pointer]: 
+                  - generic [ref=e240]: "14"
+                - generic [ref=e242]: "15"
+                - generic [ref=e245]: "16"
+                - generic [ref=e248]: "17"
+                - generic [ref=e250]: "18"
+                - generic [ref=e251]:
+                  - generic [ref=e252] [cursor=pointer]: 
+                  - generic [ref=e253]: "19"
+                - generic [ref=e255]: "20"
+                - generic [ref=e258]: "21"
+                - generic [ref=e260]: "22"
+                - generic [ref=e262]: "23"
+                - generic [ref=e264]: "24"
+              - generic [ref=e300]:
+                - generic [ref=e302]: "#include<stdio.h>"
+                - generic [ref=e304]: "#include<stdlib.h>"
+                - generic [ref=e306]: "#include<string.h>"
+                - generic [ref=e308]: "#include<limits.h>"
+                - generic [ref=e311]: typedef int VRType; // 顶点关系类型
+                - generic [ref=e313]: typedef char VertexType[20]; // 顶点类型
+                - generic [ref=e315]: // 图的数组(邻接矩阵)存储表示
+                - generic [ref=e317]: "#define INFINITY INT_MAX // 用整型最大值代替∞"
+                - generic [ref=e319]: "#define MAX_VERTEX_NUM 20 // 最大顶点个数"
+                - generic [ref=e321]: "typedef enum{DG,DN,UDG,UDN}GraphKind; // {有向"
+                - generic [ref=e323]: "图,有向网,无向图,无向网}"
+                - generic [ref=e326]: typedef struct
+                - generic [ref=e328]: "{"
+                - generic [ref=e330]: VRType adj; // 顶点关系类型。对无权图，用1
+                - generic [ref=e332]: (是)或0(否)表示相邻否；对带权图，则为权值
+                - generic [ref=e334]: "}ArcCell,AdjMatrix[MAX_VERTEX_NUM]"
+                - generic [ref=e336]: "[MAX_VERTEX_NUM]; // 二维数组"
+                - generic [ref=e339]: typedef struct // 图的数组(邻接矩阵)存储
+                - generic [ref=e341]: "{"
+                - generic [ref=e343]: VertexType vexs[MAX_VERTEX_NUM]; // 顶点向
+                - generic [ref=e345]: 量
+                - generic [ref=e347]: AdjMatrix arcs; // 邻接矩阵
+                - generic [ref=e349]: int vexnum,arcnum; // 图的当前顶点数和弧数
+                - generic [ref=e351]: GraphKind kind; // 图的种类标志
+                - generic [ref=e353]: "}MGraph;"
+              - textbox "Editor content;Press Alt+F1 for Accessibility Options." [active] [ref=e356]: "#include<stdio.h> #include<stdlib.h> #include<string.h> #include<limits.h> typedef int VRType; // 顶点关系类型 typedef char VertexType[20]; // 顶点类型 // 图的数组(邻接矩阵)存储表示 #define INFINITY INT_MAX // 用整型最大值代替∞ #define MAX_VERTEX_NUM 20 // 最大顶点个数"
+        - generic [ref=e363]: 
+        - generic [ref=e364]:
+          - generic [ref=e365]:
+            - generic [ref=e367] [cursor=pointer]: 测试结果
+            - generic [ref=e369] [cursor=pointer]: 
+          - text:  
+          - generic [ref=e370]:
+            - paragraph [ref=e371]:
+              - generic [ref=e372]:
+                - img [ref=e373]
+                - text: 0/3
+              - generic [ref=e374]: 共有3组测试集，其中有3组测试结果不匹配。详情如下：
+            - list [ref=e375]:
+              - listitem [ref=e376]:
+                - generic [ref=e377] [cursor=pointer]:
+                  - heading "测试集1" [level=2] [ref=e378]:
+                    - generic [ref=e380]: 测试集1
+                  - generic [ref=e381]:
+                    - generic [ref=e382]: 消耗内存58.3MB
+                    - generic [ref=e383]: 代码执行时长：0.02秒
+                    - img [ref=e384]
+                - text: ↵
+              - listitem [ref=e385]:
+                - generic [ref=e386] [cursor=pointer]:
+                  - heading "测试集2" [level=2] [ref=e387]:
+                    - generic [ref=e389]: 测试集2
+                  - generic [ref=e390]:
+                    - generic [ref=e391]: 消耗内存58.3MB
+                    - generic [ref=e392]: 代码执行时长：0.01秒
+                    - img [ref=e393]
+                - text: ↵
+              - listitem [ref=e394]:
+                - generic [ref=e395] [cursor=pointer]:
+                  - heading "测试集3" [level=2] [ref=e396]:
+                    - generic [ref=e398]: 测试集3
+                  - generic [ref=e399]:
+                    - generic [ref=e400]: 消耗内存58.3MB
+                    - generic [ref=e401]: 代码执行时长：0.01秒
+                    - img [ref=e402]
+                - text: ↵
+          - text:      
+        - generic [ref=e404]:
+          - generic [ref=e405]:
+            - generic [ref=e406]: 本关最大执行时间：20秒
+            - generic [ref=e407]: 本次评测耗时(编译、运行总时间)：0.528 秒
+          - generic [ref=e408]:
+            - link "下一关" [ref=e409] [cursor=pointer]:
+              - /url: /tasks/bh6icjmzw7fg?coursesId=ACLSUJBC
+            - button "自测运行" [ref=e410] [cursor=pointer]:
+              - generic [ref=e411]: 自测运行
+            - button "run 评测" [ref=e412] [cursor=pointer]:
+              - img "run" [ref=e413]
+              - generic [ref=e414]: 评测
+        - text: 
+  - generic [ref=e415]:
+    - alert
+    - alert
+    - complementary
+    - complementary

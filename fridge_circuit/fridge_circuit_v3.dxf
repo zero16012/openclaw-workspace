@@ -1,0 +1,2312 @@
+  0
+SECTION
+  2
+HEADER
+  9
+$ACADVER
+  1
+AC1015
+  9
+$DWGCODEPAGE
+  3
+UTF-8
+  9
+$EXTMIN
+ 10
+0.0
+ 20
+0.0
+ 30
+0.0
+  9
+$EXTMAX
+ 10
+450.0
+ 20
+280.0
+ 30
+0.0
+  9
+$LIMMIN
+ 10
+0.0
+ 20
+0.0
+  9
+$LIMMAX
+ 10
+450.0
+ 20
+280.0
+  0
+ENDSEC
+  0
+SECTION
+  2
+TABLES
+  0
+TABLE
+  2
+LTYPE
+ 70
+4
+  0
+LTYPE
+  2
+CONTINUOUS
+ 70
+0
+  3
+Solid line
+ 72
+65
+ 73
+0
+ 40
+0.0
+  0
+LTYPE
+  2
+DASHED
+ 70
+0
+  3
+Dashed __ __ __
+ 72
+65
+ 73
+2
+ 40
+12.0
+ 49
+6.0
+ 49
+-6.0
+  0
+ENDTAB
+  0
+TABLE
+  2
+LAYER
+ 70
+6
+  0
+LAYER
+  2
+0
+ 70
+0
+ 62
+7
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+WIRES
+ 70
+0
+ 62
+7
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+TEXT
+ 70
+0
+ 62
+3
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+DASHBOX
+ 70
+0
+ 62
+5
+  6
+DASHED
+  0
+LAYER
+  2
+SYMBOL
+ 70
+0
+ 62
+1
+  6
+CONTINUOUS
+  0
+LAYER
+  2
+GROUND
+ 70
+0
+ 62
+2
+  6
+CONTINUOUS
+  0
+ENDTAB
+  0
+TABLE
+  2
+STYLE
+ 70
+1
+  0
+STYLE
+  2
+Standard
+ 70
+0
+ 40
+0.0
+ 41
+1.0
+ 50
+0.0
+ 71
+0
+ 42
+3.0
+  3
+TXT
+  4
+
+  0
+ENDTAB
+  0
+ENDSEC
+  0
+SECTION
+  2
+ENTITIES
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+0
+ 20
+240
+ 30
+0.0
+ 11
+420
+ 21
+240
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+0
+ 20
+30
+ 30
+0.0
+ 11
+420
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+30
+ 20
+134
+ 30
+0.0
+ 11
+30
+ 21
+146
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+30
+ 20
+134
+ 30
+0.0
+ 11
+20
+ 21
+134
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+30
+ 20
+146
+ 30
+0.0
+ 11
+20
+ 21
+146
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+15
+ 20
+155
+ 30
+0.0
+ 40
+3.5
+  1
+~220V
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+30
+ 20
+134
+ 30
+0.0
+ 11
+30
+ 21
+240
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+30
+ 20
+146
+ 30
+0.0
+ 11
+30
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+30
+ 20
+22
+ 30
+0.0
+ 11
+30
+ 21
+14
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+24
+ 20
+14
+ 30
+0.0
+ 11
+36
+ 21
+14
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+26
+ 20
+11
+ 30
+0.0
+ 11
+34
+ 21
+11
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+28
+ 20
+8
+ 30
+0.0
+ 11
+32
+ 21
+8
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+30
+ 20
+22
+ 30
+0.0
+ 11
+30
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+85
+ 20
+240
+ 30
+0.0
+ 11
+85
+ 21
+210
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+85
+ 20
+199
+ 30
+0.0
+ 11
+85
+ 21
+211
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+85
+ 20
+211
+ 30
+0.0
+ 11
+93
+ 21
+203
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+65
+ 20
+198
+ 30
+0.0
+ 40
+3.5
+  1
+灯开关
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+85
+ 20
+199
+ 30
+0.0
+ 11
+85
+ 21
+150
+ 31
+0.0
+  0
+CIRCLE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbCircle
+ 10
+85
+ 20
+135
+ 30
+0.0
+ 40
+9
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+78.7
+ 20
+128.7
+ 30
+0.0
+ 11
+91.3
+ 21
+141.3
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+78.7
+ 20
+141.3
+ 30
+0.0
+ 11
+91.3
+ 21
+128.7
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+95
+ 20
+125
+ 30
+0.0
+ 40
+3.5
+  1
+EL
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+85
+ 20
+126
+ 30
+0.0
+ 11
+85
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+130
+ 20
+240
+ 30
+0.0
+ 11
+130
+ 21
+210
+ 31
+0.0
+  0
+LWPOLYLINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+123.0
+ 20
+202.0
+ 10
+126.5
+ 20
+188.0
+ 10
+130.0
+ 20
+202.0
+ 10
+133.5
+ 20
+188.0
+ 10
+137.0
+ 20
+202.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+146
+ 20
+190
+ 30
+0.0
+ 40
+2.8
+  1
+DS加热器
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+130
+ 20
+186
+ 30
+0.0
+ 11
+130
+ 21
+180
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+130
+ 20
+169
+ 30
+0.0
+ 11
+130
+ 21
+181
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+130
+ 20
+181
+ 30
+0.0
+ 11
+138
+ 21
+173
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+146
+ 20
+172
+ 30
+0.0
+ 40
+3.5
+  1
+SB2
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+130
+ 20
+169
+ 30
+0.0
+ 11
+130
+ 21
+120
+ 31
+0.0
+  0
+LWPOLYLINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+123.0
+ 20
+112.0
+ 10
+126.5
+ 20
+98.0
+ 10
+130.0
+ 20
+112.0
+ 10
+133.5
+ 20
+98.0
+ 10
+137.0
+ 20
+112.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+146
+ 20
+100
+ 30
+0.0
+ 40
+2.8
+  1
+D加热器
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+130
+ 20
+96
+ 30
+0.0
+ 11
+130
+ 21
+30
+ 31
+0.0
+  0
+LWPOLYLINE
+  8
+DASHBOX
+100
+AcDbEntity
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+185
+ 20
+160
+ 10
+260
+ 20
+160
+ 10
+260
+ 20
+230
+ 10
+185
+ 20
+230
+ 10
+185
+ 20
+160
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+190
+ 20
+232
+ 30
+0.0
+ 40
+3.5
+  1
+化霜开关板
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+195
+ 20
+240
+ 30
+0.0
+ 11
+195
+ 21
+230
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+195
+ 20
+225
+ 30
+0.0
+ 11
+205
+ 21
+225
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+205
+ 20
+225
+ 30
+0.0
+ 11
+213
+ 21
+217
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+213
+ 20
+217
+ 30
+0.0
+ 11
+225
+ 21
+217
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+225
+ 20
+217
+ 30
+0.0
+ 11
+225
+ 21
+225
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+225
+ 20
+225
+ 30
+0.0
+ 11
+235
+ 21
+225
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+195
+ 20
+195
+ 30
+0.0
+ 11
+205
+ 21
+195
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+205
+ 20
+195
+ 30
+0.0
+ 11
+213
+ 21
+187
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+213
+ 20
+187
+ 30
+0.0
+ 11
+225
+ 21
+187
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+225
+ 20
+187
+ 30
+0.0
+ 11
+225
+ 21
+195
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+225
+ 20
+195
+ 30
+0.0
+ 11
+235
+ 21
+195
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+195
+ 20
+175
+ 30
+0.0
+ 11
+205
+ 21
+175
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+205
+ 20
+175
+ 30
+0.0
+ 11
+213
+ 21
+167
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+213
+ 20
+167
+ 30
+0.0
+ 11
+225
+ 21
+167
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+225
+ 20
+167
+ 30
+0.0
+ 11
+225
+ 21
+175
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+210
+ 20
+160
+ 30
+0.0
+ 11
+210
+ 21
+145
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+210
+ 20
+132
+ 30
+0.0
+ 11
+210
+ 21
+144
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+210
+ 20
+144
+ 30
+0.0
+ 11
+218
+ 21
+136
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+183
+ 20
+132
+ 30
+0.0
+ 40
+2.8
+  1
+防霜加热器开关
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+188
+ 20
+126
+ 30
+0.0
+ 40
+3.5
+  1
+SB1
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+210
+ 20
+132
+ 30
+0.0
+ 11
+210
+ 21
+105
+ 31
+0.0
+  0
+LWPOLYLINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+203.0
+ 20
+97.0
+ 10
+206.5
+ 20
+83.0
+ 10
+210.0
+ 20
+97.0
+ 10
+213.5
+ 20
+83.0
+ 10
+217.0
+ 20
+97.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+226
+ 20
+85
+ 30
+0.0
+ 40
+2.8
+  1
+防霜加热器
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+210
+ 20
+81
+ 30
+0.0
+ 11
+210
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+250
+ 20
+240
+ 30
+0.0
+ 11
+250
+ 21
+230
+ 31
+0.0
+  0
+LWPOLYLINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+243.0
+ 20
+222.0
+ 10
+246.5
+ 20
+208.0
+ 10
+250.0
+ 20
+222.0
+ 10
+253.5
+ 20
+208.0
+ 10
+257.0
+ 20
+222.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+266
+ 20
+210
+ 30
+0.0
+ 40
+2.8
+  1
+IL加热器
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+250
+ 20
+206
+ 30
+0.0
+ 11
+250
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+285
+ 20
+240
+ 30
+0.0
+ 11
+285
+ 21
+215
+ 31
+0.0
+  0
+LWPOLYLINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+278.0
+ 20
+207.0
+ 10
+281.5
+ 20
+193.0
+ 10
+285.0
+ 20
+207.0
+ 10
+288.5
+ 20
+193.0
+ 10
+292.0
+ 20
+207.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+301
+ 20
+195
+ 30
+0.0
+ 40
+2.8
+  1
+RP加热器
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+285
+ 20
+191
+ 30
+0.0
+ 11
+285
+ 21
+30
+ 31
+0.0
+  0
+LWPOLYLINE
+  8
+DASHBOX
+100
+AcDbEntity
+100
+AcDbPolyline
+ 90
+5
+ 70
+0
+ 10
+310
+ 20
+170
+ 10
+370
+ 20
+170
+ 10
+370
+ 20
+230
+ 10
+310
+ 20
+230
+ 10
+310
+ 20
+170
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+315
+ 20
+232
+ 30
+0.0
+ 40
+3.5
+  1
+温控器
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+315
+ 20
+240
+ 30
+0.0
+ 11
+315
+ 21
+230
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+315
+ 20
+220
+ 30
+0.0
+ 11
+325
+ 21
+220
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+325
+ 20
+220
+ 30
+0.0
+ 11
+333
+ 21
+212
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+333
+ 20
+212
+ 30
+0.0
+ 11
+345
+ 21
+212
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+345
+ 20
+212
+ 30
+0.0
+ 11
+345
+ 21
+220
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+345
+ 20
+220
+ 30
+0.0
+ 11
+360
+ 21
+220
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+340
+ 20
+170
+ 30
+0.0
+ 11
+340
+ 21
+155
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+295
+ 20
+147
+ 30
+0.0
+ 40
+2.8
+  1
+启动过载保护继电器
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+340
+ 20
+145
+ 30
+0.0
+ 11
+348
+ 21
+145
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+348
+ 20
+145
+ 30
+0.0
+ 11
+354
+ 21
+139
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+354
+ 20
+139
+ 30
+0.0
+ 11
+365
+ 21
+139
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+365
+ 20
+139
+ 30
+0.0
+ 11
+365
+ 21
+145
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+365
+ 20
+145
+ 30
+0.0
+ 11
+375
+ 21
+145
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+375
+ 20
+145
+ 30
+0.0
+ 11
+375
+ 21
+110
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+340
+ 20
+145
+ 30
+0.0
+ 11
+340
+ 21
+110
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+335
+ 20
+100
+ 30
+0.0
+ 11
+345
+ 21
+100
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+335
+ 20
+94
+ 30
+0.0
+ 11
+345
+ 21
+94
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+350
+ 20
+92
+ 30
+0.0
+ 40
+3.5
+  1
+C
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+340
+ 20
+100
+ 30
+0.0
+ 11
+340
+ 21
+110
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+340
+ 20
+94
+ 30
+0.0
+ 11
+340
+ 21
+84
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+375
+ 20
+240
+ 30
+0.0
+ 11
+375
+ 21
+110
+ 31
+0.0
+  0
+CIRCLE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbCircle
+ 10
+375
+ 20
+70
+ 30
+0.0
+ 40
+20
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+365
+ 20
+74
+ 30
+0.0
+ 40
+5.0
+  1
+M
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+367
+ 20
+58
+ 30
+0.0
+ 40
+3.5
+  1
+1~
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+375
+ 20
+110
+ 30
+0.0
+ 11
+375
+ 21
+90
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+340
+ 20
+87
+ 30
+0.0
+ 11
+375
+ 21
+87
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+375
+ 20
+87
+ 30
+0.0
+ 11
+375
+ 21
+90
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+375
+ 20
+50
+ 30
+0.0
+ 11
+375
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+375
+ 20
+44
+ 30
+0.0
+ 11
+375
+ 21
+36
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+369
+ 20
+36
+ 30
+0.0
+ 11
+381
+ 21
+36
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+371
+ 20
+33
+ 30
+0.0
+ 11
+379
+ 21
+33
+ 31
+0.0
+  0
+LINE
+  8
+SYMBOL
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+373
+ 20
+30
+ 30
+0.0
+ 11
+377
+ 21
+30
+ 31
+0.0
+  0
+LINE
+  8
+WIRES
+100
+AcDbEntity
+100
+AcDbLine
+ 10
+375
+ 20
+44
+ 30
+0.0
+ 11
+375
+ 21
+50
+ 31
+0.0
+  0
+TEXT
+  8
+TEXT
+100
+AcDbEntity
+100
+AcDbText
+ 10
+155
+ 20
+8
+ 30
+0.0
+ 40
+5.0
+  1
+图14-53  电冰箱电气线路图
+  0
+ENDSEC
+  0
+EOF

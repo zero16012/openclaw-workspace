@@ -1,0 +1,21 @@
+import ezdxf
+doc = ezdxf.new("AC1015")
+msp = doc.modelspace()
+msp.add_line((10,10), (200,10), dxfattribs={"color": 1})
+msp.add_line((10,10), (10,200), dxfattribs={"color": 2})
+msp.add_line((10,200), (200,200), dxfattribs={"color": 3})
+msp.add_line((200,10), (200,200), dxfattribs={"color": 4})
+msp.add_circle((105,105), 50, dxfattribs={"color": 6})
+msp.add_text("TEST", dxfattribs={"height": 15}).set_placement((50,50))
+doc.header["$EXTMIN"] = (0,0,0)
+doc.header["$EXTMAX"] = (250,250,0)
+out = r"C:\Users\zero\.openclaw\workspace\fridge_circuit\test_simple.dxf"
+doc.saveas(out)
+
+d2 = ezdxf.readfile(out)
+print(f"Entities: {len(list(d2.modelspace()))}")
+em = d2.header.get("$EXTMIN")
+print(f"ExtMin: {em}")
+em = d2.header.get("$EXTMAX")
+print(f"ExtMax: {em}")
+print(f"File: {out}")

@@ -17,17 +17,17 @@ def e(s):
     return ''.join(ch.get(c,c) for c in s)
 
 def W(x1,y1,x2,y2):
-    lines.append(f"  0\nLINE\n  8\nWIRES\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0\n")
+    lines.append(f"  0\nLINE\n  8\nWIRES\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0")
 def S(x1,y1,x2,y2):
-    lines.append(f"  0\nLINE\n  8\nSYMBOL\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0\n")
+    lines.append(f"  0\nLINE\n  8\nSYMBOL\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0")
 def G(x1,y1,x2,y2):
-    lines.append(f"  0\nLINE\n  8\nGROUND\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0\n")
+    lines.append(f"  0\nLINE\n  8\nGROUND\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0")
 def D(x1,y1,x2,y2):
-    lines.append(f"  0\nLINE\n  8\nDASHB\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0\n")
+    lines.append(f"  0\nLINE\n  8\nDASHB\n 10\n{x1}\n 20\n{y1}\n 30\n0.0\n 11\n{x2}\n 21\n{y2}\n 31\n0.0")
 def C(x,y,r):
-    lines.append(f"  0\nCIRCLE\n  8\nSYMBOL\n 10\n{x}\n 20\n{y}\n 30\n0.0\n 40\n{r}\n")
+    lines.append(f"  0\nCIRCLE\n  8\nSYMBOL\n 10\n{x}\n 20\n{y}\n 30\n0.0\n 40\n{r}")
 def T(x,y,t,h,layer="TEXT"):
-    lines.append(f"  0\nTEXT\n  8\n{layer}\n 10\n{x}\n 20\n{y}\n 30\n0.0\n 40\n{h}\n  1\n{e(t)}\n")
+    lines.append(f"  0\nTEXT\n  8\n{layer}\n 10\n{x}\n 20\n{y}\n 30\n0.0\n 40\n{h}\n  1\n{e(t)}")
 
 TS=3.5
 TS2=2.8

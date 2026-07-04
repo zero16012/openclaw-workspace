@@ -1,0 +1,13 @@
+with open(r"C:\Users\zero\.openclaw\workspace\fridge_circuit\fridge_tmp.dxf","r") as f:
+    t = f.read()
+idx = t.find("$EXTMAX")
+print("AFTER $EXTMAX:")
+print(repr(t[idx:idx+100]))
+idx2 = t.find("$EXTMIN")
+print()
+print("AFTER $EXTMIN:")
+print(repr(t[idx2:idx2+100]))
+idx3 = t.find("ENDSEC")
+print()
+print("LAST ENDSEC in header:")
+print(repr(t[idx3-60:idx3+20]))

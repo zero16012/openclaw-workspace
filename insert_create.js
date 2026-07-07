@@ -1,5 +1,0 @@
-var ta = document.querySelector('.inputarea.monaco-mouse-cursor-text');
-ta.focus();
-var code = '\nvoid CreateGraphF(MGraph &G)\n{\n    int kind;\n    scanf("%d", &kind);\n    G.kind = (GraphKind)kind;\n    char filename[256];\n    scanf("%s", filename);\n    FILE *fp = fopen(filename, "r");\n    if (fp == NULL) return;\n    fscanf(fp, "%d", &G.vexnum);\n    fscanf(fp, "%d", &G.arcnum);\n    for (int i = 0; i < G.vexnum; i++)\n    {\n        fscanf(fp, "%s", G.vexs[i]);\n    }\n    for (int i = 0; i < G.vexnum; i++)\n    {\n        for (int j = 0; j < G.vexnum; j++)\n        {\n            G.arcs[i][j].adj = INFINITY;\n        }\n    }\n    char v1[20], v2[20];\n    int w;\n    for (int i = 0; i < G.arcnum; i++)\n    {\n        fscanf(fp, "%s %s %d", v1, v2, &w);\n        int row = LocateVex(G, v1);\n        int col = LocateVex(G, v2);\n        if (row != -1 && col != -1)\n        {\n            G.arcs[row][col].adj = w;\n            if (G.kind == UDN || G.kind == UDG)\n            {\n                G.arcs[col][row].adj = w;\n            }\n        }\n    }\n    fclose(fp);\n}\n';
-document.execCommand('insertText', false, code);
-return 'inserted CreateGraphF';
